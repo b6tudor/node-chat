@@ -1,9 +1,10 @@
-const app = require('./server');
+const {server} = require('./server');
+
 const port = process.env.PORT || 3000;
 
 
 
 
-app.listen(port,()=>{
+server.listen(port,()=>{
     console.log(`Server is running on port ${port}`);
 })
